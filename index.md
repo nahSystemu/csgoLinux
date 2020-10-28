@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/nahSystemu/csgoLinux/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### 1. Installing Pre-Dependencies 
+`apt-get install lib32gcc1`
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### 2. Downloading and Installing SteamCMD
 
-### Markdown
+1. `useradd -m steam`
+2. `su - steam`
+   `mkdir ~/Steam && cd ~/Steam`
+3. `wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz`
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+   `tar xf steamcmd_linux.tar.gz`
+   
+   `./steamcmd.sh`
 
-```markdown
-Syntax highlighted code block
+### 3. Using SteamCMD to Download Server Files
 
-# Header 1
-## Header 2
-### Header 3
+   `login <username> <password>`
 
-- Bulleted
-- List
+   `force_install_dir ./csgo/`
 
-1. Numbered
-2. List
+   `app_update 740 validate`
 
-**Bold** and _Italic_ and `Code` text
+### 4. Launching server
+[Link to Dev page](https://steamcommunity.com/dev/managegameservers)
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/nahSystemu/csgoLinux/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+`./srcds_run -game csgo -console -usercon +game_type 0 +game_mode 1 +mapgroup mg_active +map de_dust2 +sv_setsteamaccount THISGSLTHERE -net_port_try`
