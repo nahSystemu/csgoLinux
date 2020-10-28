@@ -5,16 +5,16 @@
 ### 2. Downloading and Installing SteamCMD
 
 1. `useradd -m steam`
-2. `su - steam`
+2. `su - steam`\
    `mkdir ~/Steam && cd ~/Steam`
-3. `wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz`
-   `tar xf steamcmd_linux.tar.gz`   
+3. `wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz`\
+   `tar xf steamcmd_linux.tar.gz`\
    `./steamcmd.sh`
 
 ### 3. Using SteamCMD to Download Server Files
 
-   `login <username> <password>`
-   `force_install_dir ./csgo/`
+   `login <username> <password>`\
+   `force_install_dir ./csgo/`\
    `app_update 740 validate`
 
 ### 4. Launching server
