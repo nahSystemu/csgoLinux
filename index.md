@@ -7,10 +7,10 @@
 
 ### 	1.2 Downloading and Installing SteamCMD
 
-		1. `useradd -m steam`
-		2. `su - steam`\
+	1. 	`useradd -m steam`
+	2. 	`su - steam`\
 		`mkdir ~/Steam && cd ~/Steam`
-		3. `wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz`\
+	3. 	`wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz`\
 		`tar xf steamcmd_linux.tar.gz`\
 		`./steamcmd.sh`
 
