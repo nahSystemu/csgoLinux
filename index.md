@@ -16,14 +16,26 @@
 
 ### 	1.3 Using SteamCMD to Download Server Files
 
-- `login <username> <password>`
-- `force_install_dir ./csgo/`
-- `app_update 740 validate`
+- 	`login <username> <password>`
+- 	`force_install_dir ./csgo/`
+- 	`app_update 740 validate`
 
 ### 	1.4 Launching server
--	 [Link to Dev page](https://steamcommunity.com/dev/managegameservers)
+-	[Link to Dev page](https://steamcommunity.com/dev/managegameservers)
 
-		`./srcds_run -game csgo -console -usercon +game_type 0 +game_mode 1 +mapgroup mg_active +map de_dust2 +sv_setsteamaccount THISGSLTHERE -net_port_try`
+	`./srcds_run -game csgo -console -usercon +game_type 0 +game_mode 1 +mapgroup mg_active +map de_dust2 +sv_setsteamaccount THISGSLTHERE -net_port_try`
 
-## Part 2 - Installing Sourcemod & Metamod
+## Part 2 - Sourcemod & Metamod
 
+### 	2.1 Downloading Sourcemod & Metamod
+
+- 	[Souremod](https://www.sourcemm.net/downloads.php/?branch=stable)
+- 	[Metamod](https://www.sourcemod.net/downloads.php?branch=stable)
+
+### 	2.2 Installing Sourcemod & Metamod
+
+- 	Extract contents to `/csgo/` directory
+
+### 	2.3 Generating Metamod VDF
+
+- 	[Link to VDF](https://www.sourcemm.net/vdf)
