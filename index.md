@@ -38,5 +38,5 @@
 
 ### 	2.3 Generating Metamod VDF
 
-- 	[Link to VDF](https://www.sourcemm.net/vdf)
+- 	[Link to VDF](https://www.sourcemm.net/vdf)\
 	Extract to `/csgo/addons/`
